@@ -1,0 +1,27 @@
+{
+  "name": "p5-dev-web-kanap-ts",
+  "version": "1.0.0",
+  "description": "This is the front end and back end server for Project 5 of the Web Developer path.",
+  "main": "./front/js/script.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:back\" \"npm run start:front\" \"npm run ts\"",
+    "start:front": "live-server --host=127.0.0.1 --port=5500 --open=front/html/index.html",
+    "start:back": "cd back && node server",
+    "ts": "cd front && tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L0ot3r/L0ot3r-OPENCLASSROOM-p5-versionTS-kanap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/L0ot3r/L0ot3r-OPENCLASSROOM-p5-versionTS-kanap/issues"
+  },
+  "homepage": "https://github.com/L0ot3r/L0ot3r-OPENCLASSROOM-p5-versionTS-kanap#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "live-server": "^1.2.2"
+  }
+}

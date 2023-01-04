@@ -43,6 +43,7 @@ let totalPriceInCart = cart === null || cart === void 0 ? void 0 : cart.map((pro
 totalPrice.innerHTML = !totalPriceInCart
     ? '0'
     : `${totalPriceInCart === null || totalPriceInCart === void 0 ? void 0 : totalPriceInCart.toLocaleString('fr-FR')}`; // formatage de la valeur avec séparateur de milliers
+// Petite commande pour vider un peu le local storage
 orderBtn.addEventListener('click', () => {
     localStorage.clear();
     window.location.href = 'index.html';

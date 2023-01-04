@@ -59,6 +59,8 @@ totalPrice.innerHTML = !totalPriceInCart
 	? '0'
 	: `${totalPriceInCart?.toLocaleString('fr-FR')}`; // formatage de la valeur avec séparateur de milliers
 
+
+// Petite commande pour vider un peu le local storage
 orderBtn.addEventListener('click', () => {
   localStorage.clear()
   window.location.href = 'index.html'
